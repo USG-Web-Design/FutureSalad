@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+h1 {
+	background-color: Thistle;
+	margin: 0;
+	padding: 120px;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	display: block;
+	text-decoration: none;
+	color: PaleVioletRed;
+}
+
+li a:hover {
+	color: palevioletred;
+}
+
+li {
+	margin: 0;
+	padding: 10px;
+	background-color: AliceBlue;
+	font-size: 24px;
+}
+
+li:hover {
+	background-color: whitesmoke;
+}
+
+.dropdown-content {
+	display: none;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.lists{
+	color:black;
+}
+
+.lists:hover{
+	background-color: none;
+}
