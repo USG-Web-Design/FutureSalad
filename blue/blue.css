@@ -1,0 +1,51 @@
+body {
+	font-size: 50px;
+	background: powderblue;
+	text-align: center;
+}
+p {
+	text-align: center;
+	 font-family: brownbaglunch;
+	font-size: 30px;
+
+}
+
+h1{
+	background-color: steelblue; font-family: Smartie CAPS;
+}
+
+h2{
+text-align: center;
+font-size: 25px;
+background-color: steelblue;
+font-family: Smartie CAPS;
+}
+
+h3{
+	text-align: center;
+	background-color: cornflowerblue; font-family: brownbaglunch;
+	font-size: 40px;
+}
+h4{
+	text-align: center;
+	background-color: cornflowerblue; font-family: brownbaglunch;
+	font-size: 20px;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+
+td, th {
+  border: 1px solid cornflowerblue;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: steelblue;
+}
