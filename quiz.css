@@ -1,0 +1,45 @@
+body {
+	background-color: #909CC2;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+h1{
+	font-size: 50px;
+	animation-name: title;
+  	animation-duration: 4s;
+  	animation: h1 4s infinite;
+}
+
+ul {
+	list-style: none;
+}
+
+h4{
+	font-size: 25px;
+}
+
+@keyframes h1 {
+  from {color: paleturquoise;}
+  to {color: whitesmoke;}
+}
+
+img {
+	height: 200px;
+	width: auto;
+}
+
+.hairyeyebrows {
+	height: 100px;
+	width: auto;
+
+}
+
+
+.dropdown-content {
+ display: none;
+}
+
+.dropdown:hover .dropdown-content {
+ display: block;
+

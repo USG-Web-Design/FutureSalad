@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>quiz</title>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+
+	<h1>
+		What's your ideal type?
+	</h1>
+
+
+	<ul>
+  <li>
+   Nerdy Boys
+  </li>
+  <li>
+   Play Boys
+  </li>
+  <li>
+   Gamer Boys
+  </li>
+  <li class="dropdown">
+   Who is the last one??
+   <p class="dropdown-content">Cheesy Boys:))</p >
+  </li>
+ </ul>
+
+	<h4>
+	Question 1: Which face shape do you like the best?
+	</h4>
+
+	<form>
+		<input type="radio" name="face" id="roundf" >
+		<label for="roundf">Round Face</label>
+
+
+		<br> 
+		<img src="roundface.png">
+		<br>
+
+		<input type="radio" name="face" id="pointyf">
+		<label for="point">Pointy Face</label>
+
+
+		<br>
+		<img src="pointyface.jpeg">
+		<br>
+
+	<h4>
+	Question 2: Which type of hair do you like the best?
+	</h4>
+
+		<input type="radio" name="hair" id="fluffy">
+		<label for="fluffy">Fluffy Hair</label>
+
+		<br> 
+		<img src="fluffyhair.jpeg">
+		<br>
+
+
+
+		<input type="radio" name="hair" id="flat">
+		<label for="flat">Flat Hair</label>
+
+
+
+
+
+	<br>
+	<img src="flathair.png">
+	<br>
+
+	<h4>
+	Question 3: Which eye shape do you like the best?
+	</h4>
+
+
+		<input type="radio" name="eye" id="sharpe">
+		<label for="sharp">Sharp Eyes</label>
+
+		<br>
+		<img class = "hairyeyebrows" src="sharpeye.png">
+		<br>
+
+		<input type="radio" name="eye" id="rounde">
+		<label for="round">Round Eyes</label>
+
+
+
+	<br>
+	<img class = "hairyeyebrows" src="roundeye.png">
+	<br>
+
+	<h4>
+	Question 4: Which type of eyebrows do you like the best?
+	</h4>
+
+		<input type="radio" name="eyebrows" id="bold">
+		<label for="bold">Bold Eyebrows</label>
+
+		<br>
+		<img class = "hairyeyebrows" src="thick.png">
+		<br>
+
+		<input type="radio" name="eyebrows" id="thin">
+		<label for="thin">Thin Eyebrows</label>
+
+
+	<br>
+	<img class = "hairyeyebrows" src="thin.png">
+	<br>
+
+	<h4>
+	Question 5: Which type of nose do you like the best?
+	</h4>
+
+		<input type="radio" name="nose" id="bign">
+		<label for="big">Big Nose</label>
+
+		<br>
+		<img src="bignose.png">
+		<br>
+
+		<input type="radio" name="nose" id="smalln">
+		<label for="small">Small Nose</label>
+
+
+	
+
+	<br>
+	<img class = "hairyeyebrows" src="smallnose.png">
+	<br>
+
+	<h4>
+	Question 6: Which type of mouth do you like the best?
+	</h4>
+
+
+
+		<input type="radio" name="mouth" id="bigm" >
+		<label for="round">Big Mouth</label>
+
+		<br>
+		<img class = "hairyeyebrows" src="bigmouth.png">
+		<br>
+
+		<input type="radio" name="mouth" id="smallm">
+		<label for="round">Small Mouth</label>
+
+<br><img class="hairyeyebrows" src="smallmouth.png">
+		<br> 
+		<br>
+
+
+
+
+
+	<input type="button" name="SUBMIT" class = "button" value="CALCULATE" style = "font-size: 20px; font-weight: bold; height: 100px;width: 200px" onclick="calculate();">
+
+	<p id="response"> Calculating...</p>
+
+	</body>
+
+
+</form>
+
+
+
+<br><br><br>
+
+
+<script type="text/javascript">
+
+
+
+	function calculate() {
+
+		var response = "";
+
+		var face = ""
+		var hair = ""
+		var eye = ""
+		var eyebrows = ""
+		var nose = ""
+		var mouth = ""
+
+		if (document.getElementById('roundf').checked) {
+			face = "round";
+		}
+
+		if (document.getElementById('pointyf').checked) {
+			face = "pointy";
+		}
+
+		if (document.getElementById('fluffy').checked) {
+			hair = "fluffy";
+		}
+
+
+		if (document.getElementById('flat').checked) {
+			hair = "flat";
+		}
+
+
+		if (document.getElementById('sharpe').checked) {
+			eye = "sharp";
+
+		}
+
+
+		if (document.getElementById('rounde').checked) {
+			eye = "round";
+
+		}
+
+
+
+
+		if (document.getElementById('bold').checked) {
+			eyebrows = "bold";
+		}
+
+
+		if (document.getElementById('thin').checked) {
+			eyebrows = "thin";
+		}
+
+
+
+
+		if (document.getElementById('bign').checked) {
+			nose = "big";
+		}
+
+
+		if (document.getElementById('smalln').checked) {
+			nose = "small";
+		}
+
+
+		if (document.getElementById('bigm').checked) {
+			mouth = "big";
+		}
+
+		if (document.getElementById('smallm').checked) {
+			mouth = "small";
+		}
+
+
+
+
+
+  if ((hair == "fluffy") && (eyebrows == "thick") && (eye == "round") && (nose == "big") && (mouth == "small") && (face == "round"))
+  	{response = "nerdboy";}
+
+   if ((hair == "fluffy") && (eyebrows == "thick") && (eye == "sharp") && (nose == "small") && (mouth == "big") && (face == "sharp"))
+  	{response = "playboy";}
+
+    if ((hair == "flat") && (eyebrows == "thin") && (eye == "round") && (nose == "small") && (mouth == "big") && (face == "sharp"))
+  	{response = "gamerboy";}
+
+  	if ((hair == "flat") && (eyebrows == "thick") && (eye == "sharp") && (nose == "big") && (mouth == "big") && (face == "round"))
+  	{response = "cheesyboy";}
+
+  else
+  {response = "none. Your type sucks."}
+
+  	
+
+
+  
+
+  //if (cheesyboy > playboy && nerdboy && gamerboy) 
+  	//{response = "cheesyboy";}
+
+
+  //if (nerdboy > cheesyboy && playboy && gamerboy) 
+ // 	{response = "nerdboy";}
+
+
+ // if (gamerboy > cheesyboy && playboy && nerdboy) 
+  //	{response  = "gamerboy";}
+
+
+ // if (gamerboy = nerdboy = cheesyboy = playboy) {
+  //	response = "nothing";
+//  }
+
+
+
+	
+		response = "You are most likely to be attracted to " + response;
+
+
+		document.getElementById("response").innerHTML = response;
+
+		window.alert("it works")
+
+	}
+		
+
+	
+
+
+
+
+
+</script>
+
+
+</html>
